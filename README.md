@@ -22,3 +22,9 @@ The deep learning model has 2 convolutional layers and 1 GRU layer based on [1].
 Execute the file 'pictionary.py' to start the game.
 
 Requirements:
+
+References:
+
+1. Xu, P., Song, Z., Yin, Q., Song, Y., & Wang, L. (2020). Deep Self-Supervised Representation Learning for Free-Hand Sketch. IEEE Transactions on Circuits and Systems for Video Technology, 1-1. doi:10.1109/tcsvt.2020.3003048
+
+2. The Quick, Draw! dataset. 
