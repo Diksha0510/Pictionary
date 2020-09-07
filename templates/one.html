@@ -1,12 +1,51 @@
+<!DOCTYPE html>
 <html>
-<head>
-</head>
-<body>
 
-  <img src={{image}} alt="giffy">
-  <form method='POST' action='http://localhost:5000/check'>
-    <p> Guess the drawing <input type="text" name="guess"></p>
-    <p><input type="submit" value="submit"></p>
-  </form>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pictionary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center" style="margin: 0px;margin-top: 60px;font-family: 'Annie Use Your Telescope', cursive;font-size: 66px;color: rgb(65,129,193);">Pictionary</h1>
+            <p class="text-center" style="font-family: Bitter, serif;font-size: 20px;margin-top: 23px;">You favourite pictionary game is now taken over by machine. <br>Enjoy!</p>
+            <a href="http://localhost:5000/">
+                <p class="text-center" style="font-family: Bitter, serif;">&lt;&lt;&nbsp;Go back to home</p>
+            </a>
+        </header>
+    </div>
+    <div class="container">
+        <div>
+            <section style="background-color: #121212;border-radius: 5px;padding-bottom: 25px;padding-top: 19px;margin-top: 36px;margin-bottom: 31px;">
+                <p class="text-center" style="font-family: 'Alfa Slab One', cursive;font-size: 38px;color: rgb(249,226,17);">GUESS</p>
+                <hr style="color: rgb(251,251,251);">
+                <div class="text-center"><img src="{{image}}" alt="giffy" style="border-radius: 5px;">
+                    <form>
+                        <div class="form-group"><input class="form-control" type="text" style="width: 80%;margin-right: 73px;margin-left: 103px;margin-top: 22px;font-family: 'Annie Use Your Telescope', cursive;font-size: 26px;" placeholder="Write your guess here!" name="guess"></div>
+                        <button
+                            class="btn btn-outline-warning" type="submit" style="font-family: 'Annie Use Your Telescope', cursive;"><strong>Click here!</strong></button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer style="margin-top: 100px;">
+        <p class="text-center" style="font-family: 'Annie Use Your Telescope', cursive;font-size: 21px;color: rgb(191,5,5);"><strong>Made with love&nbsp;</strong>❤&nbsp;<strong>by Diksha Choudhary</strong></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
