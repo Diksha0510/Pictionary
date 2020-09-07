@@ -29,6 +29,7 @@ This model was trained on 40k images per pre-processed(full_......npy) file for 
 6. Belt
 7. Banana
 8. Cake
+
 The deep learning model has 2 convolutional layers and 1 GRU layer based on [1].
 
 ## References
@@ -39,4 +40,5 @@ The deep learning model has 2 convolutional layers and 1 GRU layer based on [1].
 
 ## Author
 **Diksha Choudhary**
+
 Email: diksha2.choudhary83@gmail.com
