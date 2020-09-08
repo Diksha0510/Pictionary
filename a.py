@@ -46,8 +46,8 @@ class pictionary():
         self.pred=["alarm clock","bicycle","bed","airplane","apple","belt","banana","cake"]
         self.model=keras.models.load_model('/home/diksha/pictionary/my_model2.h5')
 
-        self.im=cv2.imread(r'/home/diksha/pictionary/White.jpg')
-        self.img1=cv2.imread(r'/home/diksha/python/black.JPG')
+        self.im=cv2.imread(r'./white.jpg')
+        self.img1=cv2.imread(r'./black.jpg')
         cv2.namedWindow("Pictionary")
         cv2.setMouseCallback('Pictionary',self.pic_draw)
 
@@ -79,8 +79,8 @@ class pictionary():
                 break
 
             elif k==97:
-                self.im=cv2.imread(r'/home/diksha/python/White.jpg')
-                self.img1=cv2.imread(r'/home/diksha/python/black.JPG')
+                self.im=cv2.imread(r'./white.jpg')
+                self.img1=cv2.imread(r'./black.jpg')
 
         cv2.destroyAllWindows()
 
