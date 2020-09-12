@@ -31,6 +31,7 @@ def index():
 
 @app.route('/guess')
 def guess():
+    global str,src
     images=["basket.gif","book.gif","jpg_to_gif.gif"]
     str = images[random.randint(0,3)]
     src = os.path.join(app.config['UPLOAD_FOLDER'],str)
@@ -38,8 +39,17 @@ def guess():
 
 @app.route('/check',methods=['POST','GET'])
 def check():
+    global str,src
+    str=str.split('.')[0]
     if request.method == 'POST':
         guess=request.form["guess"]
+        if guess == str:
+            ans="Yes! You guessed it right."
+            return render_template('one.html', image=src, answer=ans)
+        else:
+            ans="Sorry, You guessed it wrong."
+            return render_template('one.html', image=src, answer=ans)
+        
 
 if __name__ == '__main__':
     app.run('localhost',5000,True)
