@@ -45,10 +45,9 @@ def check():
         guess=request.form["guess"]
         if guess == str:
             ans="Yes! You guessed it right."
-            return render_template('one.html', image=src, answer=ans)
         else:
             ans="Sorry, You guessed it wrong."
-            return render_template('one.html', image=src, answer=ans)
+        return render_template('one.html', image=src, answer=ans)
         
 
 if __name__ == '__main__':
