@@ -13,7 +13,7 @@ def predict(im1):
     pred_probab=model.predict(im1)[0]
     pred_class = list(pred_probab).index(max(pred_probab))
     if(max(pred_probab)>0.5):
-        print(max(pred_probab), pred[pred_class-1])
+        print(pred[pred_class-1])
     
 # mouse callback function
 def pic_draw(event,former_x,former_y,flags,param):
