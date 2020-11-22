@@ -1,5 +1,5 @@
 # Pictionary
-_A real-time pictionary game against a bot._
+_A real-time game of pictionary against a bot._
 
 ## Get Started!
 
